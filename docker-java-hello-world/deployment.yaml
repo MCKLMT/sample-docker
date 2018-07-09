@@ -14,6 +14,8 @@ spec:
     spec:
       containers:
       - name: demo
-        image: demovesiacr.azurecr.io/demo-java-hello-world:latest
+        image: demovesiacr.azurecr.io/demo-java-hello-world:versionv1.1
         ports:
         - containerPort: 80
+        imagePullSecrets:
+        - name: acr-secret
